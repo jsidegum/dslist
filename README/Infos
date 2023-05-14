@@ -11,3 +11,4 @@ Gets:
 http://localhost:8080/games
 http://localhost:8080/games/1
 http://localhost:8080/lists
+http://localhost:8080/lists/1/games

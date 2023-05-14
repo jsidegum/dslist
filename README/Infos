@@ -7,5 +7,7 @@ https://github.com/devsuperior/dslist-backend
 Link Database H2:
 http://localhost:8080/h2-console
 
-Link Get Game:
+Gets:
 http://localhost:8080/games
+http://localhost:8080/games/1
+http://localhost:8080/lists

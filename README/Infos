@@ -15,3 +15,9 @@ http://localhost:8080/lists/1/games
 
 Postgres-local-docker
 http://localhost:5050
+
+Railway Domain
+https://dslist-production-44bb.up.railway.app/games
+https://dslist-production-44bb.up.railway.app/games/1
+https://dslist-production-44bb.up.railway.app/lists
+https://dslist-production-44bb.up.railway.app/lists/1/games

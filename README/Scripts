@@ -1,0 +1,6 @@
+SELECT a.*, b.title
+FROM TB_BELONGING a,
+     tb_game b
+where b.id = a.game_id
+         and a.list_id = 2
+order by a.position;

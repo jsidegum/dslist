@@ -1,6 +1,6 @@
-SELECT a.*, b.title
-FROM TB_BELONGING a,
-     tb_game b
-where b.id = a.game_id
-         and a.list_id = 2
-order by a.position;
+SELECT A.*, B.TITLE
+FROM TB_BELONGING A,
+     TB_GAME B
+WHERE B.ID = A.GAME_ID
+         AND A.LIST_ID = 2
+ORDER BY A.POSITION;

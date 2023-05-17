@@ -7,17 +7,24 @@ https://github.com/devsuperior/dslist-backend
 Link Database H2:
 http://localhost:8080/h2-console
 
+Link Database Postgres-local-docker
+http://localhost:5050
+
+Link Deploy com Railway
+https://dslist-production-44bb.up.railway.app
+
+----------------------------------------------
+
 Gets:
 http://localhost:8080/games
 http://localhost:8080/games/1
 http://localhost:8080/lists
 http://localhost:8080/lists/1/games
 
-Postgres-local-docker
-http://localhost:5050
-
-Railway Domain
-https://dslist-production-44bb.up.railway.app/games
-https://dslist-production-44bb.up.railway.app/games/1
-https://dslist-production-44bb.up.railway.app/lists
-https://dslist-production-44bb.up.railway.app/lists/1/games
+Post:
+http://localhost:8080/lists/2/
+Body
+{
+    "sourceIndex": 3,
+    "destinationIndex": 1
+}

@@ -30,3 +30,29 @@ Desenvolvida durante as aulas do Intensivão Java Spring da DevSuperior.
 
 - POST reordenação de games
 > <img src="README/Lists replacement.png" style="width:500px;"/>
+
+## Executando o projeto localmente
+
+### Pré-requisitos
+- JDK 17 instalado e variáveis de ambiente configuradas.
+- Git instalado.
+- Eclipse (ou outra IDE de sua preferência) instalado
+- Docker instalado (apenas para o ambiente de desenvolvimento com PostgreSQL)
+
+### Passos
+
+- Clone o repositório do DSList: git clone https://github.com/jsidegum/dslist
+- Abra o Eclipse (ou sua IDE) e importe o projeto Maven existente.
+- Instale o plug-in "Spring Tools 4" no Eclipse e reinicie, se necessário
+- Configure o JRE instalado para utilizar o JDK 17.
+- Para o ambiente de teste com H2:
+  - Execute o projeto em "Run As > Spring Boot App".
+  - Acesse a rota de teste: http://localhost:8080/games
+  - Acesse o banco de dados: http://localhost:8080/h2-console
+- Para o ambiente de desenvolvimento com PostgreSQL (usando Docker):
+  - No arquivo "application.properties", altere "test" para "dev".
+  - No arquivo "application-dev.properties", descomente os comentários.
+  - Inicie o contêiner "docker-dslist" que deve estar previamente configurado.
+  - Execute o projeto em "Run As > Spring Boot App".
+  - Acesse a rota de teste: http://localhost:8080/games
+  - Acesse o banco de dados: http://localhost:5050
